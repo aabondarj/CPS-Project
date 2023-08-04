@@ -1,0 +1,29 @@
+@import './path/to/main__brands.css';
+@import './path/to/main__price.css';
+@import './path/to/main__services.css';
+@import './path/to/main__tech.css';
+@import './path/to/callForm.css';
+@import './path/to/feedbackForm.css';
+@import './path/to/fonts.css';
+@import './path/to/footers.css';
+@import './path/to/header.css';
+@import './path/to/leftMenu.css';
+@import './path/to/style.css';
+
+$bgColor: #24292e;
+$text: #fff;
+
+@font-face {
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: Comic, sans-serif;
+  background-color: $bgColor;
+  color: $text;
+}

@@ -1,0 +1,63 @@
+.footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  padding-bottom: 19px;
+}
+
+.footer__text {
+  color: #7e7e82;
+  text-align: center;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+@media screen and (768px<=width<1120px) {
+  .footer {
+    display: flex;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .footer__text:nth-child(1) {
+    text-align: start;
+    width: 33%;
+  }
+
+  .footer__text:nth-child(3) {
+    text-align: end;
+    width: 33%;
+  }
+}
+
+@media screen and (1120px<=width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+
+  .footer__text:nth-child(1) {
+    text-align: start;
+    width: 33%;
+  }
+
+  .footer__text:nth-child(3) {
+    text-align: end;
+    width: 33%;
+  }
+}
+
+@media screen and (1440px<=width) {
+  .footer {
+    margin-left: 352px;
+  }
+}

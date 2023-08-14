@@ -1,0 +1,33 @@
+.main__tech {
+  margin-top: 24px;
+}
+
+.tech__item {
+  width: 240px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.swiper-slide__text {
+  margin: 0;
+  color: #1b1c21;
+  font-size: 16px;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.tech__item img {
+  margin: 0;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}

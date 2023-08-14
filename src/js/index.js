@@ -1,8 +1,11 @@
-import '../scss/style.scss';
-import callForm from './path/to/callform';
-import feedbackForm from './path/to/feedbackform';
-import leftMenu from './path/to/leftMenu';
-import mainBrands from './path/to/main__brands';
-import swiper from './path/to/swiper';
-
-console.log('Works!')
+import '../scss/main/main__brands.css'
+import '../scss/main/main__price.css'
+import '../scss/main/main__services.css'
+import '../scss/main/main__tech.css'
+import '../scss/callForm.css'
+import '../scss/feedbackForm.css'
+import '../scss/fonts.css'
+import '../scss/footer.css'
+import '../scss/header.css'
+import '../scss/leftMenu.css'
+import '../scss/style.css'

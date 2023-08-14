@@ -1,0 +1,41 @@
+/* @import 'swiper.css'; */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+html,
+body,
+main,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  /* display: flex; */
+}
+
+@media screen and (1120px<=width) {
+  body {
+    flex-direction: row;
+  }
+
+  .main {
+    order: -1;
+  }
+}
+
+@media screen and (1440px<=width) {
+  /* body {display: flex;} */
+}

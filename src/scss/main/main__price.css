@@ -1,0 +1,335 @@
+.main__price {
+  margin-top: 20px;
+}
+
+.main__box--56 {
+  height: 56px;
+}
+
+.main__titles {
+  display: none;
+}
+
+.price__item {
+  width: 260px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.swiper-slide__title,
+.titles__item {
+  margin: 16px auto 4px 16px;
+  color: #7e7e82;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.swiper-slide__description {
+  margin: 0;
+  margin-left: 16px;
+  color: #1b1c21;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.swiper-slide__button {
+  margin: 0;
+  padding: 0;
+  width: 119px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  background-color: #ff3e79;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide__button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide__button p {
+  margin: 0;
+  margin-left: 12px;
+  margin-right: 8px;
+  padding: 0;
+  color: #fff;
+  text-align: right;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+}
+
+.price__VAT {
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #1b1c21;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.price__CO {
+  color: #1b1c21;
+  font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-left: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.price__CO::after {
+  content: url('../../img/more.svg');
+  display: inline-block;
+  padding-top: 7px;
+  vertical-align: middle;
+  height: 100%;
+}
+
+@media screen and (768px<=width<1120px) {
+  .main__titles {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .titles__item {
+    margin: 0;
+  }
+
+  .titles__item:nth-child(1) {
+    margin-left: 16px;
+  }
+
+  .titles__item:nth-child(2) {
+    margin-left: 246px;
+  }
+
+  .titles__item:nth-child(3) {
+    margin-left: 61px;
+  }
+
+  .swiper--big {
+    width: 720px;
+    background-color: #fff;
+    border-radius: 6px;
+    /* margin: 0; */
+    padding: 0;
+    border: 1px solid transparent;
+  }
+
+  .swiper-wrapper--big {
+    margin: 0;
+    margin-top: 16px;
+    padding-bottom: 0;
+  }
+
+  .swiper-slide--big:hover {
+    box-shadow: none;
+  }
+
+  .swiper-slide--big:last-child {
+    margin-bottom: 16px;
+  }
+
+  .price__item {
+    display: flex;
+    align-items: center;
+    width: 720px;
+    height: 32px;
+    background-color: transparent;
+    background-color: #fff;
+  }
+
+  .swiper-wrapper__line {
+    width: 688px;
+    height: 1px;
+    background-color: #eaeaea;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide__title {
+    display: none;
+  }
+
+  .swiper-slide__description {
+    margin: 0;
+    position: absolute;
+  }
+
+  .swiper-slide__description:nth-child(2) {
+    left: 16px;
+  }
+
+  .swiper-slide__description:nth-child(4) {
+    left: 388px;
+  }
+
+  .swiper-slide__description:nth-child(6) {
+    left: 484px;
+  }
+
+  .swiper-slide__button {
+    bottom: auto;
+    right: auto;
+    left: 585px;
+  }
+
+  .price__VAT {
+    margin-left: 24px;
+    margin-top: 24px;
+    width: 421px;
+  }
+
+  .price__CO {
+    margin-left: 24px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (1120px<=width) {
+  .main__titles {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1056px;
+  }
+
+  .titles__item {
+    margin: 0;
+  }
+
+  .titles__item:nth-child(1) {
+    margin-left: 24px;
+  }
+
+  .titles__item:nth-child(2) {
+    margin-left: 344px;
+  }
+
+  .titles__item:nth-child(3) {
+    margin-left: 192px;
+  }
+
+  .swiper--big {
+    width: 1056px;
+    background-color: #fff;
+    border-radius: 6px;
+    /* margin: 0; */
+    padding: 0;
+    border: 1px solid transparent;
+  }
+
+  .swiper-wrapper--big {
+    margin: 0;
+    margin-top: 16px;
+    padding-bottom: 0;
+  }
+
+  .swiper-slide--big:hover {
+    box-shadow: none;
+  }
+
+  .swiper-slide--big:last-child {
+    margin-bottom: 16px;
+  }
+
+  .price__item {
+    display: flex;
+    align-items: center;
+    width: 1056px;
+    height: 32px;
+    background-color: transparent;
+    background-color: #fff;
+  }
+
+  .swiper-wrapper__line {
+    width: 1008px;
+    height: 1px;
+    background-color: #eaeaea;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide__title {
+    display: none;
+  }
+
+  .swiper-slide__description {
+    margin: 0;
+    position: absolute;
+  }
+
+  .swiper-slide__description:nth-child(2) {
+    left: 24px;
+  }
+
+  .swiper-slide__description:nth-child(4) {
+    left: 494px;
+  }
+
+  .swiper-slide__description:nth-child(6) {
+    left: 721px;
+  }
+
+  .swiper-slide__button {
+    bottom: auto;
+    right: auto;
+    left: 913px;
+  }
+
+  .price__VAT {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 421px;
+  }
+
+  .price__CO {
+    margin-left: 32px;
+    margin-right: auto;
+  }
+}

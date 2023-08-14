@@ -1,0 +1,1481 @@
+.main__box {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, rgba(248,248,248,0), white);
+    padding-top: 16px;
+    margin-bottom: 16px;
+}
+
+.main__title {
+    margin: 0;
+    /* padding-top: 0; */
+    margin-left: 16px;
+    color: #7e7e82;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+}
+
+.brands__fade {
+    position: absolute;
+    right: 0;
+    top: 700px;
+    z-index: 1;
+}
+
+
+.swiper-wrapper {
+    margin-left: 16px;
+    padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    background-color: #DDDDDD;
+}
+
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+}
+
+.swiper-slide {
+    padding: 0;
+    width: auto;
+}
+
+.swiper-slide {
+    cursor: pointer;
+}
+
+.swiper-slide:hover {
+    border-radius: 6px;
+    box-shadow: 0 7px 20px -15px #000;
+}
+
+.brands__img {
+    vertical-align: middle;
+}
+
+.main__button--change {
+    margin: 0;
+    padding: 0;
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.active {
+    margin: 0;
+    padding: 0;
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (768px<=width<1120px) {
+    .main__title {
+        margin-left: 24px;
+    }
+
+    .main__brands {
+        margin-top: 32px;
+    }
+
+    .main__box {
+        height: 56px;
+    }
+    
+    .swiper--hidden {
+        width: auto;
+        height: 170px;
+        overflow: hidden;
+        transition: all 1s ease-in;
+    }
+
+    .swiper--open {
+        width: auto;
+        height: fit-content;
+        transition: all 1s ease-in;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 10px;
+        margin-left: 24px;
+    }
+
+    .brands__fade {
+        display: none;
+    }
+
+    .main__button--change {
+        display: inline-block;
+        margin-left: 24px;
+    }
+
+    .active {
+        display: inline-block;
+        margin-left: 24px;
+    }
+
+    .main__button--change::before {
+        content: url(./static/expand.svg);
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    .active::before {
+        content: url(./static/expand180.svg);
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+}
+
+@media screen and (1120px<=width) {
+    .main__brands {
+        margin-top: 51px;
+    }
+
+    .main__box {
+        height: 56px;
+    }
+    
+    .main__title {
+        margin-left: 32px;
+    }
+
+    .swiper--hidden {
+        width: auto;
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .swiper--open {
+        width: auto;
+        height: fit-content;
+        overflow: visible;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 32px;
+        margin-left: 32px;
+    }
+
+    .brands__fade {
+        display: none;
+    }
+    
+    .main__button--change {
+        display: inline-block;
+        margin-left: 32px;
+    }
+
+    .active {
+        display: inline-block;
+        margin-left: 32px;
+    }
+
+    .main__button--change::before {
+        content: url(./static/expand.svg);
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+        transform: rotate(180deg);
+    }
+
+    .active::before {
+        content: url(./static/expand180.svg);
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (1440px<=width) {
+    /* .main__brands {margin-left: 320px;} */
+}
+.main__price {
+    margin-top: 20px;
+}
+
+.main__box--56 {
+    height: 56px;
+}
+
+.main__titles {
+    display: none;
+}
+
+.price__item {
+    width: 260px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.swiper-slide__title, .titles__item {
+    margin: 16px auto 4px 16px;
+    color: #7E7E82;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.swiper-slide__description {
+    margin: 0;
+    margin-left: 16px;
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.swiper-slide__button {
+    margin: 0;
+    padding: 0;
+    width: 119px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    background-color: #FF3E79;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide__button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide__button p {
+    margin: 0;
+    margin-left: 12px;
+    margin-right: 8px;
+    padding: 0;
+    color: #FFF;
+    text-align: right;
+    font-family: TT Lakes , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+}
+
+.price__VAT {
+    margin-left: 16px;
+    margin-right: 16px;
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.price__CO {
+    color: #1B1C21;
+    font-family: TT Lakes , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 16px;
+    margin-right: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.price__CO::after {
+    content: url(./static/more.svg);
+    display: inline-block;
+    padding-top: 7px;
+    vertical-align: middle;
+    height: 100%;
+    
+}
+
+
+@media screen and (768px<=width<1120px) {
+
+    .main__titles {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titles__item {
+        margin: 0;
+    }
+
+    .titles__item:nth-child(1) {
+        margin-left: 16px;
+    }
+
+    .titles__item:nth-child(2) {
+        margin-left: 246px;
+    }
+
+    .titles__item:nth-child(3) {
+        margin-left: 61px;
+    }
+
+    .swiper--big {
+        width: 720px;
+        background-color: #fff;
+        border-radius: 6px;
+        /* margin: 0; */
+        padding: 0;
+        border: 1px solid transparent;
+    }
+
+    .swiper-wrapper--big {
+        margin: 0;
+        margin-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .swiper-slide--big:hover {
+        box-shadow: none;
+    }
+    
+    .swiper-slide--big:last-child {
+        margin-bottom: 16px;
+    }
+
+    .price__item {
+        display: flex;
+        align-items: center;
+        width: 720px;
+        height: 32px;
+        background-color: transparent;
+        background-color: #fff;
+    }
+
+    .swiper-wrapper__line {
+        width: 688px;
+        height: 1px;
+        background-color: #EAEAEA;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide__title {
+        display: none;
+    }
+
+    .swiper-slide__description {
+        margin: 0;
+        position: absolute;
+    }
+
+    .swiper-slide__description:nth-child(2) {
+        left: 16px;
+    }
+
+    .swiper-slide__description:nth-child(4) {
+        left: 388px;
+    }
+
+    .swiper-slide__description:nth-child(6) {
+        left: 484px;
+    }
+
+    .swiper-slide__button {
+        bottom: auto;
+        right: auto;
+        left: 585px;
+    }
+
+    .price__VAT {
+        margin-left: 24px;
+        margin-top: 24px;
+        width: 421px;
+    }
+
+    .price__CO {
+        margin-left: 24px;
+        margin-right: auto;
+    }
+}
+
+@media screen and (1120px<=width) {
+
+    .main__titles {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1056px;
+    }
+
+    .titles__item {
+        margin: 0;
+    }
+
+    .titles__item:nth-child(1) {
+        margin-left: 24px;
+    }
+
+    .titles__item:nth-child(2) {
+        margin-left: 344px;
+    }
+
+    .titles__item:nth-child(3) {
+        margin-left: 192px;
+    }
+
+    .swiper--big {
+        width: 1056px;
+        background-color: #fff;
+        border-radius: 6px;
+        /* margin: 0; */
+        padding: 0;
+        border: 1px solid transparent;
+    }
+
+    .swiper-wrapper--big {
+        margin: 0;
+        margin-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .swiper-slide--big:hover {
+        box-shadow: none;
+    }
+    
+    .swiper-slide--big:last-child {
+        margin-bottom: 16px;
+    }
+
+    .price__item {
+        display: flex;
+        align-items: center;
+        width: 1056px;
+        height: 32px;
+        background-color: transparent;
+        background-color: #fff;
+    }
+
+    .swiper-wrapper__line {
+        width: 1008px;
+        height: 1px;
+        background-color: #EAEAEA;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide__title {
+        display: none;
+    }
+
+    .swiper-slide__description {
+        margin: 0;
+        position: absolute;
+    }
+
+    .swiper-slide__description:nth-child(2) {
+        left: 24px;
+    }
+
+    .swiper-slide__description:nth-child(4) {
+        left: 494px;
+    }
+
+    .swiper-slide__description:nth-child(6) {
+        left: 721px;
+    }
+
+    .swiper-slide__button {
+        bottom: auto;
+        right: auto;
+        left: 913px;
+    }
+
+    .price__VAT {
+        margin-top: 32px;
+        margin-left: 32px;
+        width: 421px;
+    }
+
+    .price__CO {
+        margin-left: 32px;
+        margin-right: auto;
+    }
+}
+
+.main {
+    margin-top: 24px;
+}
+
+.main__services {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.services__title {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    /* background-color: red; */
+}
+.title__topic {
+    white-space: nowrap;
+    color: #1B1C21;
+    font-size: 28px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+
+.title__topic {
+    margin-left: 12px;
+}
+
+.services__navigation {
+    margin-left: 16px;
+}
+
+.services__box{
+    overflow: hidden;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+
+.navigation__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__link {
+    display: block;
+    cursor: pointer;
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-left: 16px;
+    padding: 8px 16px;
+    color: #7E7E82;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.navigation__link--active {
+    /* border-radius: 6px; */
+    border: 2px solid #B8FFEC;
+    background: #FFF;
+}
+
+.navigation__link:hover {
+    /* border-radius: 6px; */
+    border: 2px solid #979799;
+}
+
+.navigation__link:focus {
+    outline: none;
+    /* border-radius: 6px; */
+    border: 2px solid #979799;
+}
+
+.navigation__link:active {
+    /* border-radius: 6px; */
+    border: 2px solid #B8FFEC;
+    background: #FFF;
+}
+
+.services__description {
+    display: flex;
+    flex-direction: column;
+    
+    /* background-color: red; */
+    margin: 0;
+    margin-top: 24px;
+}
+
+.description__text {
+    margin: 0;
+    color: #1B1C21;
+    font-size: 14px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+
+
+.description__box {
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 90px;
+    overflow: hidden;
+    /* margin-bottom: 16px; */
+    /* background-color: red; */
+}
+
+.description__expand {
+    margin-top: 16px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.expand__text {
+    margin-left: 8px;
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.description_img {
+    flex-grow: 1;
+    margin-top: 16px;
+    margin-bottom: 35px;
+}
+
+@media screen and (768px<=width<1440px) {
+    .title__topic {
+        margin-left: 20px;
+    }
+
+    .navigation__link {
+        margin-left: 24px;
+    }
+
+    .services__description {
+        flex-direction: row;
+        margin-top: 32px;
+        margin-right: 24px;
+    }
+
+    .description__item {
+        margin-left: 24px;
+        width: 312px;
+        flex-grow: 1;
+    }
+
+    .description__box {
+        min-width: 312px;
+        margin-left: 0;
+        margin-right: 0;
+        height: 145px;
+    }
+
+    .description__expand {
+        margin-left: 0;
+    }
+
+    .description_img {
+        margin: 0;
+        min-width: 360px;
+        margin-left: 48px;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (1440px<=width) {
+    .main {
+        margin-top: 9px;
+        margin-left: 320px;
+        flex-shrink: 0;
+    }
+
+    .services__title {
+        align-items: flex-end;
+        width: fit-content;
+        height: 88px;
+        margin-top: 0;
+        /* padding-left: 320px; */
+        margin-left: 320px;
+    }
+
+    .title__topic {
+        margin-left: 30px;
+    }
+
+    .navigation {
+        margin-top: 0;
+        margin-left: 32px;
+        /* overflow-x: scroll; */
+    }
+
+    .navigation__link {
+        margin: 0;
+    }
+
+    .navigation__item {
+        margin-left: auto;
+    }
+
+    .navigation__item:first-child {
+        margin-left: 0;
+    }
+
+    .services__description {
+        flex-direction: row;
+        margin-top: 32px;
+        margin-right: 24px;
+    }
+
+    .description__item {
+        margin-left: 34px;
+        width: 490px;
+        /* flex-grow: 1; */
+    }
+
+    .description__box {
+        margin-left: 0;
+        margin-right: 0;
+        height: 145px;
+    }
+
+    .description__expand {
+        margin-left: 0;
+    }
+
+    .description_img {
+        margin: 0; 
+        flex-grow: 1;
+        margin-left: 36px;
+        border-radius: 6px;
+    }
+
+}
+.main__tech {
+    margin-top: 24px;
+}
+
+.tech__item {
+    width: 240px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.swiper-slide__text {
+    margin: 0;
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.tech__item img {
+    margin: 0;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;   
+}
+/* html, body {
+    height: 100%;
+} */
+
+.callForm__close--out {
+    display: none;
+}
+
+
+.rightForm--open {
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+
+
+.callForm__close {
+    cursor: pointer;
+}
+
+
+@media screen and (1440px<=width) {
+
+    .form {
+        box-shadow: none;
+    }
+
+    .callForm__close {
+        display: none;
+    }
+    
+    .callForm__close--out {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-right: 30px;
+        margin-top: 32px;
+    }
+}
+/* html, body {
+    height: 100%;
+} */
+
+.feedbackForm__close--out {
+    display: none;
+}
+
+.form {
+    position: fixed;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 100%;
+    /* background-color: #fff; */
+    box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
+    z-index: 2;
+    display: flex;
+}
+
+.form__general {
+    background-color: #fff;
+    padding-top: 24px;
+    box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
+    width: 320px;
+    height: 100%;
+}
+
+.rightForm--open {
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.top {
+    margin-left: 16px;
+    margin-right: 24px;
+    display: flex;
+}
+
+.feedbackForm__close {
+    cursor: pointer;
+}
+
+
+.img--middle {
+    vertical-align: middle;
+}
+
+.form__title {
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.form__title::before {
+    content: url(./static/highlight.svg);
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.form__main {
+    margin-left: 16px;
+    width: 288px;
+}
+
+input {
+    width: 288px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    width: 288px;
+    height: 118px;
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+input::placeholder {
+    color: #B5B6BC;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+textarea::placeholder {
+    color: #B5B6BC;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.conf {
+    color: #7E7E82;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 23px;
+}
+
+.conf a {
+    color: #FF3E79;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.form__button {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-left: auto;
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    border: none;
+
+    color: #FFF;
+    font-family: TT Lakes;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+
+}
+
+@media screen and (1120px<=width) {
+    .form, .form__general {
+        width: 440px;
+    }
+
+    .form__main {
+        width: 376px;
+    }
+    
+    input, textarea {
+        width: 376px;
+    }
+}
+
+@media screen and (1440px<=width) {
+
+    .form {
+        box-shadow: none;
+        width: auto;
+    }
+
+    .feedbackForm__close {
+        display: none;
+    }
+    
+    .feedbackForm__close--out {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-right: 30px;
+        margin-top: 32px;
+        /* position: absolute;
+        top: 32px;
+        right: 473px; */
+    }
+}
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("TTLakes"),
+       
+       url(./fonts/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "TTLakes";
+    font-style: medium;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+         
+         url(./fonts/TTLakes-Medium.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "TTLakes";
+    font-style: bold;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+         
+         url(./fonts/TTLakes-Bold.woff) format("woff");
+  }
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+}
+
+.footer__text {
+    color: #7E7E82;
+    text-align: center;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.7218;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+@media screen and (768px<=width<1120px) {
+    .footer {
+        display: flex;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+    .footer__text:nth-child(1) {
+        text-align: start;
+        width: 33%;
+    }
+
+    .footer__text:nth-child(3) {
+        text-align: end;
+        width: 33%;
+    } 
+}
+
+@media screen and (1120px<=width) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    .footer__text:nth-child(1) {
+        text-align: start;
+        width: 33%;
+    }
+
+    .footer__text:nth-child(3) {
+        text-align: end;
+        width: 33%;
+    } 
+}
+
+@media screen and (1440px<=width) {
+    .footer {
+        margin-left: 352px;
+    }
+}
+.header {
+    height: 88px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header__burger {
+    cursor: pointer;
+}
+
+.header__buttons * {
+    cursor: pointer;
+}
+
+.header__repair {
+    cursor: pointer;
+}
+
+.header__checkstatus {
+    cursor: pointer;
+}
+
+.header__repair, .header__checkstatus {
+    display: flex;
+}
+
+.divider {
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background-color: #EAEAEA;
+}
+
+
+.img--middle {
+    vertical-align: middle;
+}
+
+
+
+.header__buttons, .header__divider-2, .space, .repair__title, .checkstatus__title {
+    display: none;
+}
+
+.repair__title, .checkstatus__title {
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: TT Lakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+@media screen and (768px<=width<1440px) {
+    .header {
+    justify-content: flex-start;
+    padding-left: 24px;
+    padding-right: 24px;
+    }
+
+    .header__buttons, .header__divider-2, .space {
+    display: flex;
+    }
+
+    .header__burger--flexOrder_first {
+        order: -2;
+    }
+
+    .header__logo--flexOrder_second {
+        order: 0;
+    }
+
+    .header__divider-1--flexOrder_third {
+        order: -1;
+    }
+
+    .space {
+        width: 100%;
+    }
+
+    .divider {
+        margin: 0 20px;
+    }
+
+    .header__buttons {
+        gap: 16px;
+    }
+    
+    .header__repair {
+        margin-right: 16px;
+    }
+}
+
+@media screen and (1440px<=width) {
+    .header {
+        justify-content: flex-end;
+        background-color: transparent;  
+        padding-left: 32px;
+        padding-right: 32px;
+        /* margin-top: 24px; */
+        float: right;
+        position: absolute;
+        /* margin-left: 320px; */
+    }
+
+    .repair__title, .checkstatus__title {
+        display: flex;
+        /* white-space: nowrap; */
+    }
+
+    .header__repair {
+        margin-right: 32px;
+    }
+
+    .repair__title, .checkstatus__title {
+        align-items: center;
+        margin-right: 8px;
+    }
+
+    .header__repair, .header__checkstatus {
+        margin-top: auto;
+
+    }
+
+    .header__burger, .header__logo, .header__divider-1 {
+        display: none;
+    }
+
+}
+/* html, body {
+    height: 100%;
+} */
+
+.leftMenu {
+    position: fixed;
+    overflow-y: scroll;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 24px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+    z-index: 2;
+}
+
+.leftMenu--open {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.leftMenu__top {
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+}
+
+.leftMenu__close {
+    cursor: pointer;
+}
+
+.leftMenu__logo {
+    margin-left: 16px;
+}
+
+.leftMenu__search {
+    margin-left: auto;
+}
+
+.img--middle {
+    vertical-align: middle;
+}
+
+.leftMenu__links {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.leftMenu__item {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.leftMenu__item:first-child {
+    margin-top: 0;
+}
+
+
+.leftMenu__link {
+    text-decoration: none;
+    color: #1b1c21;
+    font-family: TTLakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 24px;
+}
+
+.leftMenu__link--active {
+    color: #7e7e82;
+}
+
+.leftMenu__item--active::before {
+    content: url(./static/highlight32.svg); 
+    vertical-align: middle;
+}
+
+.menu__buttons {
+    display: flex;
+    margin-top: 268px;
+}
+
+.menu__buttons * {
+    cursor: pointer;
+}
+
+.leftMenu__search {
+    cursor: pointer;
+}
+
+.menu__item {
+    margin-left: 16px;
+}
+
+.menu__item:first-child {
+    margin-left: 24px;
+}
+
+.leftMenu__mail {
+    font-family: TTLakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 24px;
+    margin-top: 16px;
+}
+
+.leftMenu__phone {
+    font-family: TTLakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-left: 24px;
+    margin-top: 12px;
+}
+
+.leftMenu__languages {
+    display: flex;
+    margin: 0;
+    margin-left: 24px;
+    padding: 0;
+    padding-bottom: 32px;
+}
+
+.languages__item {
+    font-family: TTLakes, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    list-style: none;
+    margin-right: 7px;
+}
+
+.languages__link {
+    text-decoration: none;
+    color: #1b1c21;;
+}
+
+.languages__link--active {
+    color:#7e7e82;
+}
+
+
+@media screen and (1120px<=width) {
+    .leftMenu {
+        transition: all 1s;
+    }
+
+    .leftMenu--open {
+        transition: all 0.7s;
+    }
+}
+
+@media screen and (1440px<=width) {
+    .leftMenu {
+        left: 0;
+        opacity: 1;
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .leftMenu__close {
+        display: none;
+    }
+}
+
+/*# sourceMappingURL=style.css.map*/

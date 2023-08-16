@@ -41,7 +41,7 @@ module.exports = {
       // Компилируем SCSS в CSS { loader: MiniCssExtractPlugin.loader }
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
 
       // Подключаем шрифты из css
@@ -57,7 +57,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Extract css to separate file
+          // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
           'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
           'sass-loader' // compiles Sass to CSS, using Node Sass by default

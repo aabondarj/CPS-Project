@@ -129,7 +129,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-    width: 100%;
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -239,7 +238,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-    width: 100%;
     margin-left: 24px;
     margin-right: 24px;
   }
